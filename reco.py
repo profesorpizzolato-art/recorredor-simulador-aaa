@@ -1,4 +1,3 @@
-git_add.py
 import streamlit as st
 from PIL import Image
 
