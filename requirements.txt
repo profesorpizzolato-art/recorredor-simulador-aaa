@@ -1,0 +1,10 @@
+streamlit
+numpy
+pandas
+matplotlib
+plotly
+fpdf
+
+Instalar:
+
+pip install -r requirements.txt
