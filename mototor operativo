@@ -1,0 +1,12 @@
+def simulador_estado(presion, nivel, temperatura):
+
+    if presion > 120:
+        alarma = "ALTA PRESION"
+
+    if nivel > 90:
+        alarma = "TANQUE LLENO"
+
+    if temperatura < 30:
+        alarma = "BAJA TEMPERATURA"
+
+    return alarma
