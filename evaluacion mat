@@ -1,0 +1,6 @@
+| Acción    | Resultado |
+| --------- | --------- |
+| Correcta  | +10       |
+| Aceptable | +5        |
+| Riesgosa  | -5        |
+| Crítica   | -20       |
