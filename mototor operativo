@@ -10,3 +10,4 @@ def simulador_estado(presion, nivel, temperatura):
         alarma = "BAJA TEMPERATURA"
 
     return alarma
+def simulador_estado(presion, nivel, temperatura).py
