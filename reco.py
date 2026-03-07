@@ -1,2 +1,2 @@
 
-/workspaces/recorredor-simulador-aaa/reco.py
+workspaces_recorredor_simulador_aaa_reco.py
