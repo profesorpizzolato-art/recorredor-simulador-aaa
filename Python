@@ -13,3 +13,4 @@ if st.button("Calcular producción"):
 
 File "/mount/src/recorredor-simulador-aaa/reco.py", line 1
   git grabador-simulator.py
+y=x^2
