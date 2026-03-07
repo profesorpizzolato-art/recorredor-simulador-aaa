@@ -1,4 +1,14 @@
 MENFA_SIMULATOR/
+simulador_menfa/
+
+app.py
+imagenes/
+   menu.png
+   pozo.png
+   bateria.png
+   bombeo_mecanico.png
+   esp.png
+   certificado.png
 
 app.py
 
