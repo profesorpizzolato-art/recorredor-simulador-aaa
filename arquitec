@@ -1,0 +1,25 @@
+MENFA_SIMULATOR/
+
+app.py
+
+engine/
+    simulator.py
+    physics.py
+    alarms.py
+
+modules/
+    baterista.py
+    planta.py
+    produccion.py
+
+scenarios/
+    fuga.py
+    alta_presion.py
+    parada_bomba.py
+
+training/
+    scoring.py
+    evaluation.py
+
+ui/
+    dashboard.py
