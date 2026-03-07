@@ -157,3 +157,5 @@ if st.button("Finalizar simulación"):
     else:
 
         st.error("REENTRENAMIENTO NECESARIO")
+        streamlit run Ejecutar_simulador.py
+
