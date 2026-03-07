@@ -10,3 +10,4 @@ nivel = st.slider("Nivel dinámico (m)",0,2000,800)
 if st.button("Calcular producción"):
     q = (2000-nivel)*0.02
     st.write("Producción estimada:",round(q,2),"m3/d")
+
