@@ -1,0 +1,12 @@
+import streamlit as st
+import numpy as np
+
+st.title("Simulador Operativo MENFA")
+
+presion_tbg = st.slider("Presión Tubing (kg/cm2)",0,50,15)
+presion_csg = st.slider("Presión Casing (kg/cm2)",0,50,10)
+nivel = st.slider("Nivel dinámico (m)",0,2000,800)
+
+if st.button("Calcular producción"):
+    q = (2000-nivel)*0.02
+    st.write("Producción estimada:",round(q,2),"m3/d")
