@@ -1,1 +1,129 @@
 git_add.py
+import streamlit as st
+from PIL import Image
+
+st.set_page_config(page_title="Simulador Operativo MENFA", layout="wide")
+
+st.title("SIMULADOR OPERATIVO PETROLERO - MENFA")
+
+menu = st.sidebar.selectbox(
+    "Seleccionar módulo",
+    [
+        "Inicio",
+        "Simulador de Pozos",
+        "Batería de Producción",
+        "Bombeo Mecánico",
+        "Bombeo Electrosumergible",
+        "Certificación"
+    ]
+)
+
+# ------------------------
+# INICIO
+# ------------------------
+
+if menu == "Inicio":
+
+    st.header("Centro de Entrenamiento MENFA")
+
+    img = Image.open("imagenes/menu.png")
+
+    st.image(img, use_column_width=True)
+
+    st.write("Simulador profesional para entrenamiento operativo petrolero.")
+
+# ------------------------
+# SIMULADOR DE POZO
+# ------------------------
+
+if menu == "Simulador de Pozos":
+
+    st.header("Simulador de Producción de Pozo")
+
+    img = Image.open("imagenes/pozo.png")
+
+    st.image(img, use_column_width=True)
+
+    presion_tbg = st.slider("Presión Tubing", 0, 50, 18)
+    presion_csg = st.slider("Presión Casing", 0, 50, 10)
+    nivel = st.slider("Nivel dinámico", 0, 2000, 950)
+
+    if st.button("Simular"):
+
+        produccion = (2000 - nivel) * 0.03
+
+        st.success(f"Producción estimada: {produccion:.2f} m3/d")
+
+# ------------------------
+# BATERÍA
+# ------------------------
+
+if menu == "Batería de Producción":
+
+    st.header("Simulador de Batería")
+
+    img = Image.open("imagenes/bateria.png")
+
+    st.image(img, use_column_width=True)
+
+    pozos = st.slider("Cantidad de pozos", 1, 20, 8)
+
+    produccion_total = pozos * 18
+
+    st.success(f"Producción total: {produccion_total} m3/d")
+
+# ------------------------
+# BOMBEO MECÁNICO
+# ------------------------
+
+if menu == "Bombeo Mecánico":
+
+    st.header("Simulador Bombeo Mecánico")
+
+    img = Image.open("imagenes/bombeo_mecanico.png")
+
+    st.image(img, use_column_width=True)
+
+    carrera = st.slider("Carrera (pulgadas)", 50, 200, 144)
+    spm = st.slider("Golpes por minuto", 1, 20, 12)
+
+    produccion = carrera * spm * 0.002
+
+    st.success(f"Producción estimada: {produccion:.2f} m3/d")
+
+# ------------------------
+# ESP
+# ------------------------
+
+if menu == "Bombeo Electrosumergible":
+
+    st.header("Simulador ESP")
+
+    img = Image.open("imagenes/esp.png")
+
+    st.image(img, use_column_width=True)
+
+    nivel = st.number_input("Nivel dinámico", value=1300)
+    friccion = st.number_input("Pérdidas fricción", value=60)
+    boca = st.number_input("Presión boca pozo", value=80)
+
+    tdh = nivel + friccion + boca
+
+    st.success(f"TDH total = {tdh} m")
+
+# ------------------------
+# CERTIFICADO
+# ------------------------
+
+if menu == "Certificación":
+
+    st.header("Certificado MENFA")
+
+    img = Image.open("imagenes/certificado.png")
+
+    st.image(img, use_column_width=True)
+
+    nombre = st.text_input("Nombre del alumno")
+
+    if st.button("Emitir certificado"):
+        st.success(f"Certificado emitido para {nombre}")
