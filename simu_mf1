@@ -1,0 +1,12 @@
+simulador_menfa/
+
+app.py
+pozos.py
+bateria.py
+bombeo_mecanico.py
+esp.py
+pcp.py
+produccion.py
+cartas_dinamometricas.py
+certificado.py
+requirements.txt
