@@ -10,10 +10,6 @@ imagenes/
    esp.png
    certificado.png
 
-app.py
-import streamlit as st
-from PIL import Image
-
 st.set_page_config(page_title="Simulador Operativo MENFA", layout="wide")
 
 st.title("SIMULADOR OPERATIVO PETROLERO - MENFA")
