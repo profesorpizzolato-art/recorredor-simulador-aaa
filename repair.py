@@ -1,4 +1,4 @@
 reparar_para_pyhton.py
 eliminar_archivos_traba.py
 convertir_todos_los_archivos_en_python.py
- /mount/admin/install_path: No_such file_or_directory.py
+ /mount/admin/install_path: No_such_file_or_directory.py
