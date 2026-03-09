@@ -1,3 +1,5 @@
+streamlit==1.31.0
+pandas
 streamlit
 pandas
 numpy
@@ -158,4 +160,5 @@ if st.button("Finalizar simulación"):
 
         st.error("REENTRENAMIENTO NECESARIO")
         streamlit run Ejecutar_simulador.py
+
 
