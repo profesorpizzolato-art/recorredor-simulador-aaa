@@ -18,3 +18,5 @@
   "postAttachCommand":
     "server": "recorredor_run_reco.py 
       "app.py"
+
+reparar_cat: /mount/admin/install_path: No such file or directory.py
