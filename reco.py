@@ -1,1 +1,1 @@
-"workspaces/recorredor/simulador/aaa/reco".py
+·.·"workspaces/recorredor/simulador/aaa/reco".py
