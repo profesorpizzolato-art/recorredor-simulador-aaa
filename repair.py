@@ -1,5 +1,0 @@
-reparar_para_pyhton.py
-eliminar_archivos_traba.py
-convertir_todos_los_archivos_en_python.py
-autotoreparar_archivos_para_python.py
-reconfigurar_todotos_los_archivos_de_app_para_python_desde_cero.py
